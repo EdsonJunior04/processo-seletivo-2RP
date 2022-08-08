@@ -1,0 +1,140 @@
+.box_cadastro h1 {
+    font-size: 5em;
+    margin-bottom: 7rem;
+}
+
+.container_cadastro {
+    background-color: #80EEFF;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 82vh;
+}
+
+.box_cadastro {
+    background-color: #BFF7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10em;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 30px;
+}
+
+
+.labelCadastroFoto {
+    cursor: pointer;
+    width: 25vw;
+    height: 50vh;
+    margin-top: 15rem;
+    margin-right: 25rem;
+    border-radius: 250px;
+}
+
+.box_forms {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.div_ToggleValidar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.label_precisaValidar {
+    width: 100%;
+    display: block;
+}
+
+.organizar {
+    display: flex;
+    justify-content: center;
+}
+
+.organizar_switchBtn {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.checkbox_switch {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.label_switch {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 26px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.label_switch:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.active {
+    background: #80EEFF;
+}
+
+.active:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.text_switch {
+    margin-top: 5px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+}
+
+.label_arquivo_cadastroEmpresa_g2 {
+    width: 13vw !important;
+    height: 6vh !important;
+    margin-top: 1rem;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: black;
+    border-radius: 15px !important;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-bottom: 2em !important;
+    margin-right: 7rem !important;
+}
+
+.input_file_cadastroEmpresa_g2 {
+    display: none;
+}
+
+.label_arquivo_cadastroEmpresa_g2 img {
+    margin-right: 2rem !important;
+}

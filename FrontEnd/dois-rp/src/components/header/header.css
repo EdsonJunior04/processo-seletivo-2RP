@@ -1,0 +1,48 @@
+.box_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+
+
+.box_img  img{
+    width: 3vw;
+    height: 5.6vh;
+    border-radius: 500em;
+}
+
+.box_img  {
+    margin-right: 2rem;
+}
+
+.box_fotoPerfil{
+    display: flex;
+    align-items: center;
+}
+
+.box_fotoPerfil p{
+    font-size: 1.3em;
+}
+
+.box_navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3em;
+}
+
+.box_navigation p{
+    margin-left: 1rem;
+}
+
+.box_header a{
+    color: black;
+    text-decoration: none;
+}
+
+.logout{
+    cursor: pointer;
+    background-color: transparent;
+}

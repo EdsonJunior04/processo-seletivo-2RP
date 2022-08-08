@@ -1,0 +1,140 @@
+.container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container_main {
+    background-color: #80EEFF;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.box_login {
+    background-color: #BFF7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15em;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 30px;
+}
+
+.box_login h1 {
+    font-size: 5em;
+    margin-bottom: 5rem;
+}
+
+.inputLabel {
+    position: relative;
+    padding-top: 13px;
+}
+
+.inputLabel input {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    outline: none;
+    min-width: 250px;
+    width: 20vw;
+    height: 40px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+}
+
+.inputLabel select {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    outline: none;
+    min-width: 250px;
+    width: 20vw;
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+}
+
+.inputLabel input::placeholder {
+    color: transparent;
+}
+
+.inputLabel label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: tra;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.inputLabel input:required:invalid+label {
+    color: black;
+}
+
+.inputLabel input:focus:required:invalid {
+    border: 2px solid black;
+}
+
+.inputLabel input:required:invalid+label:before {
+    content: '*';
+}
+
+.inputLabel input:focus+label,
+.inputLabel input:not(:placeholder-shown)+label {
+    font-size: 13px;
+    top: 0;
+}
+
+.btn_login {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    outline: none;
+    min-width: 250px;
+    width: 20vw;
+    height: 45px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+    background-color: #80EEFF;
+    cursor: pointer;
+}
+
+.btn_login:hover {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    outline: none;
+    min-width: 250px;
+    width: 20vw;
+    height: 45px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+    background-color: #BFF7FF;
+}
+
+@media screen and (max-widht: 1600px) {
+    .box_login h1 {
+        font-size: 3em;
+        margin-bottom: 5rem;
+    }
+}

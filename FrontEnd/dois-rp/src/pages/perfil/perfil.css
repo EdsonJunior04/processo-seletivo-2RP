@@ -1,0 +1,119 @@
+.box_perfil {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+    margin-bottom: 9rem;
+}
+
+.dados_perfil h1 {
+    font-size: 4em;
+}
+
+.dados_perfil {
+    background-color: #BFF7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 30px;
+}
+
+.img_perfil img {
+    width: 26vw;
+    height: 50vh;
+    border-radius: 100rem;
+}
+
+.btn_alterar {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    outline: none;
+    min-width: 250px;
+    width: 20vw;
+    height: 45px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+    background-color: #80EEFF;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.btn_alterar:hover {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    outline: none;
+    min-width: 250px;
+    width: 20vw;
+    height: 45px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+    background-color: #BFF7FF;
+}
+
+.input_alterar input {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    outline: none;
+    min-width: 250px;
+    width: 20vw;
+    height: 40px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+}
+
+.input_alterar {
+    position: relative;
+    padding-top: 13px;
+}
+
+.label_arquivo_cadastroAtt_g2 {
+    width: 16vw !important;
+    height: 6vh !important;
+    margin-top: 1rem;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: black;
+    border-radius: 15px !important;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-bottom: 2em !important;
+    margin-right: 7rem !important;
+}
+
+.input_file_cadastroAtt_g2 {
+    display: none;
+}
+
+.label_arquivo_cadastroAtt_g2 img {
+    margin-right: 2rem !important;
+}
+
+.box_img_perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.box_img_perfil label {
+    margin-top: 2rem;
+    margin-left: 6rem;
+}

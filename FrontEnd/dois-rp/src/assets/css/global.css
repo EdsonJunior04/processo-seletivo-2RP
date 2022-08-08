@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: gray 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: #80EEFF;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+Link {
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: transparent;
+    border-top: gray 1px solid;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}

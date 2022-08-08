@@ -1,0 +1,58 @@
+.ReactModal__Content {
+    border-radius: 10px !important;
+    background-color: #BFF7FF !important;
+}
+
+.fechar{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.fechar img {
+    width: 2vw;
+    cursor: pointer;
+}
+
+.container_modal{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box_imagem_modal img{
+    border-radius: 500px;
+    width: 25vw;
+    height: 50vh;
+}
+.box_imagem_modal{
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_excluir{
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    outline: none;
+    min-width: 250px;
+    width: 20vw;
+    height: 45px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+    color: #BFF7FF;
+    background-color: red;
+    cursor: pointer;
+    margin-top: 6rem;
+}
+
+.btn_excluir:hover{
+    background-color: #BFF7FF;
+    color: red;
+}
