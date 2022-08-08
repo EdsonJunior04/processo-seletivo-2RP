@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>doisrp_webAPI</name>
+    </assembly>
+    <members>
+        <member name="M:doisrp_webAPI.Controllers.LoginController.Login(doisrp_webAPI.ViewModes.LoginViewModel)">
+            <summary>
+            Loga na aplicação
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="T:doisrp_webAPI.Controllers.UsuariosController">
+            <summary>
+            Controller responsavel pelos endpoints (URLs) referentes aos usuarios
+            </summary>
+        </member>
+        <member name="P:doisrp_webAPI.Controllers.UsuariosController._usuarioRepository">
+            <summary>
+            Objeto _usuarioRepository que ira receber todos os metodos definidos na interface IUsuarioRepository
+            </summary>
+        </member>
+        <member name="M:doisrp_webAPI.Controllers.UsuariosController.#ctor">
+            <summary>
+            Instancia o objeto _usuarioRepository para que haja a referencia aos metodos no repositorio
+            </summary>
+        </member>
+        <member name="M:doisrp_webAPI.Controllers.UsuariosController.Get">
+            <summary>
+            Lista todos os usuarios
+            </summary>
+            <returns>Uma lista de usuarios e um status code 200</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Controllers.UsuariosController.BuscarUsuarioLogado">
+            <summary>
+            Lista os dados do usuario logado
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:doisrp_webAPI.Controllers.UsuariosController.GetById(System.Int32)">
+            <summary>
+            Busca um usuario atraves do ID
+            </summary>
+            <param name="id">ID do usuario que sera buscado</param>
+            <returns>Um usuario buscado e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Controllers.UsuariosController.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuario existente
+            </summary>
+            <param name="id">ID do usuario que sera deletado</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Controllers.UsuariosController.Cadastrar(doisrp_webAPI.ViewModes.UsuarioViewModelCadastro,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Cadastra um novo usuario
+            </summary>
+            <param name="NovoUsuario"></param>
+            <param name="FotoUsuario"></param>
+            <returns>Retorna os dados do novo usuario</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Controllers.UsuariosController.AtualizarUsuarioPrivilegiado(System.Int32,doisrp_webAPI.ViewModes.UsuarioAtualizarAdm,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Atualiza todos os dados de qualquer usuario
+            </summary>
+            <param name="id"></param>
+            <param name="UsuarioAtualizado"></param>
+            <param name="FotoUsuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:doisrp_webAPI.Controllers.UsuariosController.AtualizarUsuarioGeral(System.Int32,doisrp_webAPI.ViewModes.UsuarioGeralViewModelAtualizar,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Atualiza um usuario existente
+            </summary>
+            <param name="id"></param>
+            <param name="UsuarioAtualizado"></param>
+            <param name="FotoUsuario"></param>
+            <returns>Retorna uma lista de dados atualizados</returns>
+        </member>
+        <member name="T:doisrp_webAPI.Domains.Usuario">
+            <summary>
+            Classe que representa a entidade (tabela) de usuarios
+            </summary>
+        </member>
+        <member name="M:doisrp_webAPI.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+             Valida o usuario 
+            </summary>
+            <param name="email">E-mail do usuario</param>
+            <param name="senha">Senha do usuario</param>
+            <returns>Um objeto do tipo Usuario que foi buscado</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Interfaces.IUsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuarios
+            </summary>
+            <returns>Uma lista de usuarios</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Interfaces.IUsuarioRepository.Cadastrar(doisrp_webAPI.ViewModes.UsuarioViewModelCadastro)">
+            <summary>
+            Cadastra um novo usuario
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario que sera cadastrado</param>
+        </member>
+        <member name="M:doisrp_webAPI.Interfaces.IUsuarioRepository.AtualizarGeral(System.Int32,doisrp_webAPI.ViewModes.UsuarioGeralViewModelAtualizar)">
+            <summary>
+            Atualiza email e senha do usuario
+            </summary>
+            <param name="id">ID do usuario que sera atualizado</param>
+            <param name="usuarioAtualizado">Objeto com as novas informacoes</param>
+        </member>
+        <member name="M:doisrp_webAPI.Interfaces.IUsuarioRepository.AtualizarAdm(System.Int32,doisrp_webAPI.ViewModes.UsuarioAtualizarAdm)">
+            <summary>
+            Atualiza todos os dados de qualquer usuario
+            </summary>
+            <param name="id"></param>
+            <param name="usuarioAtualizado"></param>
+            <returns></returns>
+        </member>
+        <member name="M:doisrp_webAPI.Interfaces.IUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deletar um usuario existente
+            </summary>
+            <param name="id">ID do usuario que sera deletado</param>
+        </member>
+        <member name="M:doisrp_webAPI.Interfaces.IUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuario atraves do ID
+            </summary>
+            <param name="Id">ID do usuario que sera buscado</param>
+            <returns>Um usuario buscado</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Repositories.UsuarioRepository.AtualizarGeral(System.Int32,doisrp_webAPI.ViewModes.UsuarioGeralViewModelAtualizar)">
+            <summary>
+            Atualiza um usuario existente
+            </summary>
+            <param name="id">ID do usuario que sera atualizado</param>
+            <param name="usuarioAtualizado">Objeto com as novas informacoes</param>
+        </member>
+        <member name="M:doisrp_webAPI.Repositories.UsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuario atraves do ID
+            </summary>
+            <param name="Id">ID do usuario que sera buscado</param>
+            <returns>Um usuario buscado</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Repositories.UsuarioRepository.Cadastrar(doisrp_webAPI.ViewModes.UsuarioViewModelCadastro)">
+            <summary>
+            Cadastra um novo usuario
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario que sera cadastrado</param>
+        </member>
+        <member name="M:doisrp_webAPI.Repositories.UsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuario existente
+            </summary>
+            <param name="id">ID do usaurio que sera deletado</param>
+        </member>
+        <member name="M:doisrp_webAPI.Repositories.UsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuarios
+            </summary>
+            <returns>Uma lista de usuarios</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Utils.Upload.UploadFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Faz o upload do arquivo para o servidor
+            </summary>
+            <param name="arquivo">Arquivo vindo de um formulario</param>
+            <returns>Nome do arquivo salvo</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Utils.Upload.ValidarExtensao(System.String[],System.String)">
+            <summary>
+            Valida o uso de enxtensões permitidas apenas
+            </summary>
+            <param name="extensoes">Array de extensões permitidas</param>
+            <param name="nomeDoArquivo">Nome do arquivo</param>
+            <returns>Verdadeiro/Falso</returns>
+        </member>
+        <member name="M:doisrp_webAPI.Utils.Upload.RemoverArquivo(System.String)">
+            <summary>
+            Remove um arquivo do servidor
+            </summary>
+            <param name="nomeDoArquivo">Nome do Arquivo</param>
+        </member>
+        <member name="M:doisrp_webAPI.Utils.Upload.RetornarExtensao(System.String)">
+            <summary>
+            Retorna a extensão de um arquivo
+            </summary>
+            <param name="nomeDoArquivo">Nome do Arquivo</param>
+            <returns>Retorna a extensão de um arquivo</returns>
+        </member>
+        <member name="T:doisrp_webAPI.ViewModes.LoginViewModel">
+            <summary>
+            Classe responsavel pelo modedlo de Login
+            </summary>
+        </member>
+    </members>
+</doc>
